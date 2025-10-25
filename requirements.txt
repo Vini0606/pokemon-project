@@ -1,0 +1,17 @@
+# Para extração de dados (extract-pokemon.py)
+requests
+
+# Para análise de dados (exploratory_analysis.ipynb) e o app (app.py)
+pandas
+numpy
+
+# Para visualização de dados na análise (exploratory_analysis.ipynb)
+matplotlib
+seaborn
+
+# Para executar o dashboard (app.py)
+streamlit
+plotly
+
+# Para executar o Jupyter Notebook (exploratory_analysis.ipynb)
+notebook

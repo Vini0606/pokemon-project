@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Ambientes Virtuais
+.venv/
+av_pokemon/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# DADOS GERADOS (Importante!)
+# Não queremos "commitar" os arquivos JSON, apenas o script que os cria.
+#data/raw/*.json
+
+# Windows
+Thumbs.db
