@@ -15,3 +15,8 @@ plotly
 
 # Para executar o Jupyter Notebook (exploratory_analysis.ipynb)
 notebook
+
+# Para executar o AutoClusterHPO (exploratory_analysis.ipynb)
+numpy
+scikit-learn
+hyperopt
