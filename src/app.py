@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 from datetime import datetime, timedelta
+from pathlib import Path
 
 # --- Configuração da Página ---
 # Usar o layout 'wide' para aproveitar melhor o espaço da tela
@@ -11,9 +12,9 @@ st.set_page_config(layout="wide", page_title="Dashboard de Análise")
 @st.cache_data
 def carregar_dados():
     """Gera um DataFrame fictício para o dashboard."""
-    df_atributos = pd.read_json(r'data\\raw\\pokemons_atributos.json')
+    df_atributos = Path("data") / "raw" / "pokemons_atributos.json"
 
-    df_combats = pd.read_json(r'data\\raw\\combats.json')
+    df_combats = Path("data") / "raw" / "combats.json"
 
     df_combats_winners = df_combats['winner'].value_counts().reset_index().rename(
     columns={'winner': 'id', 'index': 'pokemon_id', 'count':'wins'}
